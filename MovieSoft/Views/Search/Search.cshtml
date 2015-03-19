@@ -1,0 +1,31 @@
+﻿@model  IList<string>
+
+@{
+    ViewBag.Title = "Search";
+}
+<link href="@Url.Content("~/Content/SeachMovie.css")" rel="stylesheet" type="text/css" />
+
+<div>
+    <h3>What the search found...</h3>
+  
+</div>
+
+@foreach (var item in Model)
+{
+    <li>
+        @item.ToString()
+    </li>
+}
+
+
+
+@if(@Model.Count <=0)
+{
+<h4>No new items found</h4>
+}
+else
+{ 
+    @Html.ActionLink("Save", "Save")
+ }
+
+@Html.ActionLink("Save", "Save")

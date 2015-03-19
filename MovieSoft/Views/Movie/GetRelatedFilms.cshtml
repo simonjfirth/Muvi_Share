@@ -1,0 +1,9 @@
+﻿@model List<MovieSoft.Models.SoftMovie>
+
+
+    @foreach (var film in @Model)
+    {
+        <li>@Html.ActionLink(@film.Title, "Movie", new { ID = film.ID })</li>
+    }
+
+

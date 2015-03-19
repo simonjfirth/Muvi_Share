@@ -1,0 +1,130 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+html, body {
+    height: 100%;
+     min-height: 100%;
+       background-color: black;
+       z-index: -3;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.mainMovieHolder {
+    margin-top: 40px;
+    position: relative;
+}
+
+.divSearchMovie {
+    float:left;
+    margin-top: 12px;
+
+  font-family: 'Levenim MT';
+    line-height: 20px;
+    font-size: 12px;
+
+    overflow:hidden;
+    text-align: left;
+    text-indent: 14px;
+
+   
+    background-color: white;
+    transition-duration: 0.1s;
+}
+
+    .divSearchMovie:hover {
+         box-shadow: 8px 8px 30px #888888;
+        transform: scale(1.02,1.02);
+    }
+
+
+.leftImage {
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    width: 350px;
+    bottom: 0px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.RightImage {
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    width: 350px;
+    bottom: 0px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.background {
+   position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: black;
+}
+
+.divMainHolder {
+    background-color:white;
+    min-height: 100%;
+    z-index: 1;
+
+}
+
+.shadow {
+      box-shadow: 10px 8px 30px black;
+     
+}
+
+.infront {
+     z-index:2;
+     margin-top: -70px;
+}
+
+
+
+.videoHolder {
+    height: 450px;
+}
+
+
+.movieInfoBottom {
+    position:absolute;
+    bottom: 0px;
+    height: 40px;
+    line-height: 40px;
+    width:98%;
+ 
+}
+
+.genreList
+{
+    float: left;
+
+}
+
+

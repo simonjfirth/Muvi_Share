@@ -1,0 +1,22 @@
+﻿@model  IList<MovieSoft.Models.SoftMovie>
+
+
+@{
+    ViewBag.Title = "Current Movies";
+}
+
+<h2>Current Movies</h2>
+
+<h3>Search</h3>
+@Html.ActionLink("Refresh Movie List" ,"Search")
+
+<h4>Movie List</h4>
+    @foreach (var item in Model)
+    {
+       <li>
+           @item.Title
+       </li>
+    }
+
+
+
